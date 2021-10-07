@@ -32,7 +32,7 @@ const Navbar = () => {
 						<MenuIcon>
 						</MenuIcon>						
 					</IconButton>
-					<Typography variant="h5" className={classes.Title}>CD4ny</Typography>
+					<Typography variant="h5" className={classes.Title}>CD4ny!</Typography>
 					<IconButton color="inherit" className={classes.menuIcon} aria-label="menu" onClick={() => {
 						window.open("https://github.com/CD4ny/","_blank")
 					 } }>
