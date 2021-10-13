@@ -32,7 +32,8 @@ const Navbar = () => {
 					</IconButton>
 				</Toolbar>
 			</AppBar>
-			<div className={classes.offset}></div> 
+			<div className={classes.offset}></div>
+			
 			<PersonalCard nick="DAniel Chaviano" bio="Unnecesart explanations guide to hell" avatar="https://avatars.githubusercontent.com/u/64395192?v=4" />
 		</React.Fragment>
 	);
