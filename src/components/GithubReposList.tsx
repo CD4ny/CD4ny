@@ -1,23 +1,20 @@
-import React from "react";
 import { makeStyles, ThemeProvider } from "@material-ui/styles";
 import { createTheme } from "@material-ui/core/styles";
 import {
-  CardContent,
-  CardMedia,
-  CardActions,
   Paper,
   Grid,
   Box,
-  CardHeader,
   Card,
   Typography,
   Avatar,
 } from "@material-ui/core";
 import data from "./testRepo.json";
 
+// Componente react
 const GithubReposList = (props: any) => {
   const classes = useStyle();
 
+//   Para devolver cada targeta
   const reposCards = (item: any) => (
     <Grid
       item
@@ -30,9 +27,10 @@ const GithubReposList = (props: any) => {
       key={item.id}
     >
       <Box mx={1} my={1}>
-        <Paper elevation={0}>
-          <Card variant="outlined" style={{ borderRadius: "2px" }}>
-            <Box display="flex" flexGrow={12} p={1}>
+        <Paper elevation={0} style={{filter: 'opacity(50%)'}}>
+          <Card variant="outlined" style={{ borderRadius: "2px", filter: 'opacity(100%)'}}>
+            <Box display="flex" flexGrow={12} p={1} py={2}>
+                {/* Indo de la izq */}
               <Box
                 flexGrow={1}
                 display="flex"
@@ -43,6 +41,7 @@ const GithubReposList = (props: any) => {
                   Live From Space
                 </Typography>
               </Box>
+              {/* Parte de la foto del avatar */}
               <Box
                 flexGrow={1}
                 display="flex"
@@ -62,6 +61,7 @@ const GithubReposList = (props: any) => {
     </Grid>
   );
 
+//   Lo que se renderiza
   return (
     <ThemeProvider theme={theme}>
       <Grid
@@ -80,6 +80,7 @@ const GithubReposList = (props: any) => {
   );
 };
 
+// El tema
 const theme = createTheme({
   breakpoints: {
     values: {
@@ -96,6 +97,7 @@ const theme = createTheme({
   },
 });
 
+// Clases css
 const useStyle = makeStyles((theme) => ({
   root: {
     backgroundColor: "#eeeeee",
