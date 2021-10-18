@@ -6,7 +6,8 @@ import MenuIcon from "@material-ui/icons/Menu";
 import { withStyles } from '@material-ui/styles';
 import React, { Component } from "react";
 import PersonalCard from "./PersonalCard";
-
+import axios from "axios";
+import users from "./users.json"
 
 const useStyle = (theme: any) => ({
 	offset: {
@@ -18,12 +19,8 @@ const useStyle = (theme: any) => ({
 	}
 })
 
-interface IProps {
-	classes: any
-}
-
-interface IState {
-}
+interface IProps { classes: any }
+interface IState { lista: string[] }
 
 
 
@@ -33,9 +30,39 @@ class Navbar extends Component<IProps, IState> {
 	constructor(props: any) {
 		super(props)
 		this.state = {
-
+			lista: []
 		}
+		this.getUsersData();
 
+	}
+	getUsersData() {
+
+
+
+		const lista:any[] = []
+
+		users.map((item: string, i) => {
+			axios.get(`http://api.github.com/users/${item}`)
+				.then(function (res) {
+
+					const raw = JSON.stringify(res.data)
+					const data = JSON.parse(raw)
+
+					const { nick, avatar_url, bio, twitter_username, blog, html_url } = data
+					lista[i] = (<PersonalCard nick={nick} avatar={avatar_url} bio={bio}
+						Twitter={twitter_username} Page={blog} GitHub={html_url}></PersonalCard>)
+					return 0
+				})
+				.catch(function (error) {
+					// handle error
+					console.log(error);
+				})
+				.then(function () {
+					// always executed
+				});
+			return null
+		})
+		this.setState({ lista: lista })
 	}
 
 	render() {
@@ -55,10 +82,8 @@ class Navbar extends Component<IProps, IState> {
 				</AppBar>
 				<div className={classes.offset}></div>
 				<Grid container spacing={0} alignContent="flex-start" justifyContent="flex-start">
-					
-					
-					
-					<PersonalCard nick="Daniel"></PersonalCard>
+
+					{this.state.lista}
 
 
 				</Grid>
