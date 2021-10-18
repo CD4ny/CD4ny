@@ -7,39 +7,65 @@ import {
   Card,
   Typography,
   Avatar,
+  CardContent,
+  CardActions,
+  Link,
+  Divider,
 } from "@material-ui/core";
+import { StarRounded, AccountTreeRounded, LineStyle } from "@material-ui/icons";
 import data from "./testRepo.json";
 
 // Componente react
 const GithubReposList = (props: any) => {
   const classes = useStyle();
 
-//   Para devolver cada targeta
+  //   Para devolver cada targeta
   const reposCards = (item: any) => (
     <Grid
       item
       xs={12}
       sm={12}
       md={6}
-      lg={4}
+      lg={3}
       xl={3}
       style={{ zIndex: 1 }}
       key={item.id}
     >
-      <Box mx={1} my={1}>
-        <Paper elevation={0} style={{filter: 'opacity(50%)'}}>
-          <Card variant="outlined" style={{ borderRadius: "2px", filter: 'opacity(100%)'}}>
-            <Box display="flex" flexGrow={12} p={1} py={2}>
-                {/* Indo de la izq */}
-              <Box
-                flexGrow={1}
-                display="flex"
-                alignItems="center"
-                justifyContent="center"
-              >
-                <Typography component="div" variant="h5">
-                  Live From Space
-                </Typography>
+      <Box mx={0.5} my={1}>
+        <Paper elevation={0} style={{ filter: "opacity(94%)" }}>
+          <Card variant="outlined" style={{ borderRadius: "2px" }}>
+            <Box display="flex" flexGrow={12}>
+              {/* Indo de la izq */}
+              <Box flexGrow={10}>
+                <CardContent style={{ paddingBottom: "0" }}>
+                  <Typography color="textSecondary">
+                    On <Link href="/">GitHub</Link>
+                  </Typography>
+                  <Typography variant="h5" component="div">
+                    {item.user}
+                  </Typography>
+                  <Typography variant="body2">some info</Typography>
+                </CardContent>
+                <Divider />
+                <CardActions>
+                  <Box display="flex" alignItems="center">
+                    <StarRounded
+                      fontSize="small"
+                      style={{ color: "#a19f9f" }}
+                    />
+                    7
+                  </Box>
+                  <Box display="flex" alignItems="center">
+                    <AccountTreeRounded
+                      fontSize="small"
+                      style={{ color: "#a19f9f" }}
+                    />
+                    7
+                  </Box>
+                  <Box display="flex" alignItems="center">
+                    <LineStyle fontSize="small" style={{ color: "#a19f9f" }} />7
+                  </Box>
+                </CardActions>
               </Box>
               {/* Parte de la foto del avatar */}
               <Box
@@ -61,14 +87,14 @@ const GithubReposList = (props: any) => {
     </Grid>
   );
 
-//   Lo que se renderiza
+  //   Lo que se renderiza
   return (
     <ThemeProvider theme={theme}>
       <Grid
         container
         spacing={0}
-        alignContent="flex-start"
-        justifyContent="flex-start"
+        alignItems="center"
+        justifyContent="center"
         className={classes.root}
       >
         {data.map((item) => reposCards(item))}
@@ -101,10 +127,10 @@ const theme = createTheme({
 const useStyle = makeStyles((theme) => ({
   root: {
     backgroundColor: "#eeeeee",
-    paddingTop: "20px",
-    paddingBottom: "20px",
+    padding: "20px 10px",
     position: "relative",
     overflow: "hidden",
+    width: "100",
   },
   circle: {
     width: "8cm",
@@ -114,16 +140,19 @@ const useStyle = makeStyles((theme) => ({
     backgroundColor: "tomato",
     position: "absolute",
     top: "-1cm",
+    left: "-1cm",
+    filter: "blur(2.4px)",
   },
   circle2: {
-    right: '-1cm',
-    top: '-1cm',
+    right: "-1cm",
+    top: "-1cm",
     width: "8cm",
     height: "6cm",
     borderRadius: "100%",
     zIndex: 0,
     backgroundColor: "#27b0e6",
     position: "absolute",
+    filter: "blur(2.4px)",
   },
   box: {
     width: "8cm",
@@ -134,6 +163,7 @@ const useStyle = makeStyles((theme) => ({
     position: "absolute",
     right: "50%",
     bottom: "-5cm",
+    filter: "blur(2.4px)",
   },
 }));
 
