@@ -1,0 +1,55 @@
+.root {
+  /* backgroundColor: #eeeeee, */
+  background-color: #3b3b3b;
+  padding: 20px 10px;
+  position: relative;
+  overflow: hidden;
+  width: 100;
+}
+
+.circle {
+  width: 8cm;
+  height: 4.5cm;
+  border-radius: 70%;
+  z-index: 0;
+  background-color: tomato;
+  position: absolute;
+  top: -1cm;
+  left: -1cm;
+  filter: blur(2.4px);
+  animation: rotationAnimation infinite 20s linear;
+  
+}
+.circle2 {
+  right: -1cm;
+  top: -1cm;
+  width: 8cm;
+  height: 6cm;
+  border-radius: 100%;
+  z-index: 0;
+  background-color: #27b0e6;
+  position: absolute;
+  filter: blur(2.4px);
+  animation: rotationAnimation infinite 50s linear;
+}
+
+.box {
+  width: 8cm;
+  height: 6cm;
+  z-index: 0;
+  background-color: #27b0e6;
+  transform: rotateZ(45deg);
+  position: absolute;
+  right: 50%;
+  bottom: -5cm;
+  filter: blur(2.4px);
+  animation: rotationAnimation infinite 30s alternate-reverse;
+}
+
+@keyframes rotationAnimation {
+    from {
+        transform: rotateZ(0deg);
+    }to {
+        transform: rotateZ(360deg);
+    }
+}

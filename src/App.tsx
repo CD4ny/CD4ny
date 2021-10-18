@@ -7,7 +7,6 @@ import { withStyles } from '@material-ui/styles';
 import React, { Component } from "react";
 import PersonalCard from "./PersonalCard";
 import GithubReposList from "./components/GithubReposList";
-import { makeStyles } from '@material-ui/styles';
 
 const useStyle = (theme: any) => ({
 	offset: {

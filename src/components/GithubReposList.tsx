@@ -1,4 +1,4 @@
-import { makeStyles, ThemeProvider } from "@material-ui/styles";
+import { ThemeProvider } from "@material-ui/styles";
 import { createTheme } from "@material-ui/core/styles";
 import {
   Paper,
@@ -13,12 +13,11 @@ import {
   Divider,
 } from "@material-ui/core";
 import { StarRounded, AccountTreeRounded, LineStyle } from "@material-ui/icons";
+import "./reposStyle.css";
 import data from "./testRepo.json";
 
 // Componente react
 const GithubReposList = (props: any) => {
-  const classes = useStyle();
-
   //   Para devolver cada targeta
   const reposCards = (item: any) => (
     <Grid
@@ -31,7 +30,7 @@ const GithubReposList = (props: any) => {
       style={{ zIndex: 1 }}
       key={item.id}
     >
-      <Box mx={0.5} my={1}>
+      <Box mx={0.7} my={1}>
         <Paper elevation={0} style={{ filter: "opacity(94%)" }}>
           <Card variant="outlined" style={{ borderRadius: "2px" }}>
             <Box display="flex" flexGrow={12}>
@@ -46,7 +45,7 @@ const GithubReposList = (props: any) => {
                   </Typography>
                   <Typography variant="body2">some info</Typography>
                 </CardContent>
-                <Divider />
+                <Divider style={{ width: "75%" }} />
                 <CardActions>
                   <Box display="flex" alignItems="center">
                     <StarRounded
@@ -73,10 +72,11 @@ const GithubReposList = (props: any) => {
                 display="flex"
                 alignItems="center"
                 justifyContent="center"
+                pr={1}
               >
                 <Avatar
-                  style={{ height: "75px", width: "75px" }}
-                  alt={props.nick}
+                  style={{ height: "100px", width: "100px" }}
+                  alt={item.user}
                   src={props.avatar}
                 />
               </Box>
@@ -95,12 +95,12 @@ const GithubReposList = (props: any) => {
         spacing={0}
         alignItems="center"
         justifyContent="center"
-        className={classes.root}
+        className="root"
       >
         {data.map((item) => reposCards(item))}
-        <div className={classes.circle}></div>
-        <div className={classes.circle2}></div>
-        <div className={classes.box}></div>
+        <div className="circle"></div>
+        <div className="circle2"></div>
+        <div className="box"></div>
       </Grid>
     </ThemeProvider>
   );
@@ -122,49 +122,5 @@ const theme = createTheme({
     },
   },
 });
-
-// Clases css
-const useStyle = makeStyles((theme) => ({
-  root: {
-    backgroundColor: "#eeeeee",
-    padding: "20px 10px",
-    position: "relative",
-    overflow: "hidden",
-    width: "100",
-  },
-  circle: {
-    width: "8cm",
-    height: "4.5cm",
-    borderRadius: "70%",
-    zIndex: 0,
-    backgroundColor: "tomato",
-    position: "absolute",
-    top: "-1cm",
-    left: "-1cm",
-    filter: "blur(2.4px)",
-  },
-  circle2: {
-    right: "-1cm",
-    top: "-1cm",
-    width: "8cm",
-    height: "6cm",
-    borderRadius: "100%",
-    zIndex: 0,
-    backgroundColor: "#27b0e6",
-    position: "absolute",
-    filter: "blur(2.4px)",
-  },
-  box: {
-    width: "8cm",
-    height: "6cm",
-    zIndex: 0,
-    backgroundColor: "#27b0e6",
-    transform: "rotateZ(45deg)",
-    position: "absolute",
-    right: "50%",
-    bottom: "-5cm",
-    filter: "blur(2.4px)",
-  },
-}));
 
 export default GithubReposList;
