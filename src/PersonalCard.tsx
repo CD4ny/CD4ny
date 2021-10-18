@@ -46,7 +46,7 @@ const PersonalCard = (props: any) => {
     }));
     return (
         <ThemeProvider theme={theme}>
-            <Grid xs={12} sm={12} md={6} lg={4} xl={3}>
+            <Grid item xs={12} sm={12} md={6} lg={4} xl={3}>
                 <Box mx={1} my={1} >
                     <Paper elevation={3}>
                         <Card variant="outlined" >

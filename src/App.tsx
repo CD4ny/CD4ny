@@ -7,6 +7,7 @@ import { withStyles } from '@material-ui/styles';
 import React, { Component } from "react";
 import PersonalCard from "./PersonalCard";
 import GithubReposList from "./components/GithubReposList";
+import { makeStyles } from '@material-ui/styles';
 
 const useStyle = (theme: any) => ({
 	offset: {
@@ -15,7 +16,7 @@ const useStyle = (theme: any) => ({
 	,
 	Title: {
 		flexGrow: 1,
-	}
+	},
 })
 
 interface IProps {
@@ -24,10 +25,6 @@ interface IProps {
 
 interface IState {
 }
-
-
-
-
 class Navbar extends Component<IProps, IState> {
 
 	constructor(props: any) {
@@ -62,14 +59,13 @@ class Navbar extends Component<IProps, IState> {
 					
 
 				</Grid>
-				<Grid container spacing={0} alignContent="flex-start" justifyContent="flex-start">
 					
 					
 					
 					<GithubReposList/>
 					
 
-				</Grid>
+				
 			</React.Fragment>
 		);
 	}
