@@ -6,7 +6,7 @@ import MenuIcon from "@material-ui/icons/Menu";
 import { withStyles } from '@material-ui/styles';
 import React, { Component } from "react";
 import PersonalCard from "./PersonalCard";
-
+import GithubReposList from "./components/GithubReposList";
 
 const useStyle = (theme: any) => ({
 	offset: {
@@ -59,7 +59,15 @@ class Navbar extends Component<IProps, IState> {
 					
 					
 					<PersonalCard nick="Daniel"></PersonalCard>
+					
 
+				</Grid>
+				<Grid container spacing={0} alignContent="flex-start" justifyContent="flex-start">
+					
+					
+					
+					<GithubReposList/>
+					
 
 				</Grid>
 			</React.Fragment>
