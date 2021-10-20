@@ -98,9 +98,6 @@ const GithubReposList = (props: any) => {
         className="root"
       >
         {data.map((item) => reposCards(item))}
-        <div className="circle"></div>
-        <div className="circle2"></div>
-        <div className="box"></div>
       </Grid>
     </ThemeProvider>
   );

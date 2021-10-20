@@ -7,7 +7,7 @@ import { withStyles } from '@material-ui/styles';
 import React, { Component } from "react";
 import PersonalCard from "./PersonalCard";
 import GithubReposList from "./components/GithubReposList";
-
+import "./components/reposStyle.css"
 const useStyle = (theme: any) => ({
 	offset: {
 		minHeight: 56
@@ -42,7 +42,7 @@ class Navbar extends Component<IProps, IState> {
 					<Toolbar>
 						<Typography variant="h5" className={classes.Title} style={{ wordWrap: "break-word" }}>CD4ny!</Typography>
 						<IconButton color="inherit" aria-label="menu" onClick={() => {
-
+							console.log()
 						}}>
 							<MenuIcon>
 							</MenuIcon>
@@ -50,21 +50,23 @@ class Navbar extends Component<IProps, IState> {
 					</Toolbar>
 				</AppBar>
 				<div className={classes.offset}></div>
-				<Grid container spacing={0} alignContent="flex-start" justifyContent="flex-start">
-					
-					
-					
+				<Grid container spacing={0} alignContent="flex-start" justifyContent="flex-start" className="root" style={{ zIndex: 1 }}>
+
+
+
 					<PersonalCard nick="Daniel"></PersonalCard>
-					
+					<GithubReposList />
+
 
 				</Grid>
-					
-					
-					
-					<GithubReposList/>
-					
 
-				
+				<div className="circle"></div>
+				<div className="circle2"></div>
+				<div className="box"></div>
+
+
+
+
 			</React.Fragment>
 		);
 	}

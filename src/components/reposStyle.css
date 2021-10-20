@@ -1,6 +1,6 @@
 .root {
   /* backgroundColor: #eeeeee, */
-  background-color: #3b3b3b;
+  background-color: #fff0;
   padding: 20px 10px;
   position: relative;
   overflow: hidden;
@@ -17,7 +17,7 @@
   top: -1cm;
   left: -1cm;
   filter: blur(2.4px);
-  animation: rotationAnimation infinite 20s linear;
+  animation: rotationAnimation infinite 120s linear;
   
 }
 .circle2 {
@@ -27,7 +27,7 @@
   height: 6cm;
   border-radius: 100%;
   z-index: 0;
-  background-color: #27b0e6;
+  background-color: #27e647;
   position: absolute;
   filter: blur(2.4px);
   animation: rotationAnimation infinite 50s linear;
@@ -43,7 +43,7 @@
   right: 50%;
   bottom: -5cm;
   filter: blur(2.4px);
-  animation: rotationAnimation infinite 30s alternate-reverse;
+  animation: rotationAnimation infinite 60s alternate-reverse;
 }
 
 @keyframes rotationAnimation {
