@@ -9,7 +9,7 @@ import Typography from "@material-ui/core/Typography";
 import { Language } from "@material-ui/icons";
 import GitHub from "@material-ui/icons/GitHub";
 import Twitter from "@material-ui/icons/Twitter";
-import { ThemeProvider } from "@material-ui/styles";
+import { makeStyles, ThemeProvider } from "@material-ui/styles";
 import React from "react";
 
 
@@ -32,18 +32,25 @@ const PersonalCard = (props: any) => {
         },
     });
 
+    const useStyle = makeStyles((theme) => ({
+        cardMedia: {
+            paddingTop: '81.25%',
+            borderRadius: '50%',
+            margin: '28px'
+        },
+    }));
     return (
         <ThemeProvider theme={theme}>
-            <Grid xs={12} sm={12} md={6} lg={4} xl={3}>
+            <Grid item xs={12} sm={12} md={6} lg={4} xl={3}>
                 <Box mx={1} my={1} >
-                    <Paper elevation={3}>
+                    <Paper elevation={0} style={{ filter: "opacity(94%)" }}>
                         <Card variant="outlined" >
                             <Grid container justifyContent="flex-start"
                                 alignItems="center" spacing={0} >
 
                                 <Box m={1}>
 
-                                    <Avatar style={{ height: '75px', width: '75px' }} alt={props.nick} src={props.avatar} />
+                                    <Avatar style={{ height: '100px', width: '100px' }} alt={props.nick} src={props.avatar} />
 
                                 </Box>
                                 <Box m={1} style={{ flexGrow: 1 }}>
