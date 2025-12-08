@@ -29,15 +29,15 @@ Currently working on **[Cakrasoft](https://chakrasoft.com/)**
 ---
 
 ## 📈 GitHub Stats
-
 ![Your GitHub Stats](https://github-readme-stats.vercel.app/api?username=CD4ny&show_icons=true&theme=radical)
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=CD4ny&layout=compact&theme=radical)
 
 ---
 
 ## 🏆 GitHub Trophies
+![Trophies](https://github-profile-trophy.vercel.app/?username=CD4ny&theme=radical&margin-w=15&cache=86400)
 
-![Trophies](https://github-profile-trophy.vercel.app/?username=CD4ny&theme=radical&margin-w=15)
+---
 
 ## 📫 Let's Connect!
 
