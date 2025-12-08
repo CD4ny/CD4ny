@@ -13,12 +13,12 @@ Currently working on **[Cakrasoft](https://chakrasoft.com/)**
 - 🔭 I’m currently maintaining **[EDEN-BOOKS Backend](https://edenbooks.rs/)**
 - 🌱 I’m learning **Machine Learning,Software Engineering,backend Development**
 - 📫 How to reach me: **[chavianodaniel99@gmail.com](mailto:chavianodaniel99@gmail.com)**
-- ⚡ Fun fact: **Friday's releases are not good only if you don't pass **
+- ⚡ Fun fact: **Friday's releases are not good only if you don't pass unt tests **
 
 ---
 
 ## 🛠️ Tech Stack
-![Php](https://img.shields.io/badge/-php-3776AB?style=flat&logo=python&logoColor=white)
+![Php](https://img.shields.io/badge/-Php-3776AB?style=flat&logo=php&logoColor=white)
 ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat&logo=python&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
 ![React](https://img.shields.io/badge/-React-61DAFB?style=flat&logo=react&logoColor=black)
