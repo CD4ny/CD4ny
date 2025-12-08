@@ -1,10 +1,10 @@
 # 👋 Hi, I'm [Your Name]!
 
-[![GitHub followers](https://img.shields.io/github/followers/your-username?style=social)](https://github.com/your-username)
-[![Twitter Follow](https://img.shields.io/twitter/follow/your-twitter-handle?style=social)](https://twitter.com/your-twitter-handle)
+[![GitHub followers](https://img.shields.io/github/followers/your-username?style=social)](https://github.com/CD4ny)
+[![Twitter Follow](https://img.shields.io/twitter/follow/your-twitter-handle?style=social)](https://twitter.com/CD4ny)
 
-A passionate [your role, e.g., Software Engineer | Data Scientist | Full-Stack Developer] from [Your Country/City] 🌍  
-Currently working on [current project or job] | Always learning 📚
+A passionate Web developer  
+Currently working on Eden| Always learning 📚
 
 ---
 
