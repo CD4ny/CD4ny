@@ -29,9 +29,10 @@ Currently working on **[Cakrasoft](https://chakrasoft.com/)**
 
 ## 📫 Let's Connect!
 
-[![Portfolio](https://img.shields.io/badge/Linkedin-FF5722?style=for-the-badge&logo=google-chrome&logoColor=white)](https://your-portfolio.com)
-[![Twitter](https://img.shields.io/twitter/follow/CD4ny?style=social)](https://twitter.com/CD4ny)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/your-profile)
+[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/your-twitter-handle)
 [![Portfolio](https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=google-chrome&logoColor=white)](https://your-portfolio.com)
+
 
 
 ---
