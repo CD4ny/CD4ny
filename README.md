@@ -1,4 +1,4 @@
-# 👋 Hi, I'm [Your Name]!
+# 👋 Hi, I'm Daniel Chaviano!
 
 [![GitHub followers](https://img.shields.io/github/followers/CD4ny?style=social)](https://github.com/CD4ny)
 [![Twitter Follow](https://img.shields.io/twitter/follow/CD4ny?style=social)](https://twitter.com/CD4ny)
@@ -28,21 +28,10 @@ Currently working on **[Cakrasoft](https://chakrasoft.com/)**
 
 ---
 
-## 📈 GitHub Stats
-![Your GitHub Stats](https://github-readme-stats.vercel.app/api?username=CD4ny&show_icons=true&theme=radical)
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=CD4ny&layout=compact&theme=radical)
-
----
-
-## 🏆 GitHub Trophies
-![Trophies](https://github-profile-trophy.vercel.app/?username=CD4ny&theme=radical&margin-w=15&cache=86400)
-
----
-
 ## 📫 Let's Connect!
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/your-profile)
-[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/your-twitter-handle)
+[![Twitter](https://img.shields.io/twitter/follow/CD4ny?style=social)](https://twitter.com/CD4ny)
 [![Portfolio](https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=google-chrome&logoColor=white)](https://your-portfolio.com)
 
 ---
