@@ -18,7 +18,7 @@ Currently working on **[Cakrasoft](https://chakrasoft.com/)**
 ---
 
 ## 🛠️ Tech Stack
-
+![Php](https://img.shields.io/badge/-php-3776AB?style=flat&logo=python&logoColor=white)
 ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat&logo=python&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
 ![React](https://img.shields.io/badge/-React-61DAFB?style=flat&logo=react&logoColor=black)
@@ -30,10 +30,10 @@ Currently working on **[Cakrasoft](https://chakrasoft.com/)**
 
 ## 📫 Let's Connect!
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/your-profile)
+[![LinkedIn](https://)
 [![Twitter](https://img.shields.io/twitter/follow/CD4ny?style=social)](https://twitter.com/CD4ny)
-[![Portfolio](https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=google-chrome&logoColor=white)](https://your-portfolio.com)
+[![Portfolio](https://)
 
 ---
 
-⭐️ From [Your Name](https://github.com/CD4ny)
+⭐️ From [CD4ny](https://github.com/CD4ny)
