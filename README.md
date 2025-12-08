@@ -4,7 +4,7 @@
 [![Twitter Follow](https://img.shields.io/twitter/follow/CD4ny?style=social)](https://twitter.com/CD4ny)
 
 A passionate Web developer  
-Currently working on Eden| Always learning 📚
+Currently working on Chackrasoft | Always learning 📚
 
 ---
 
