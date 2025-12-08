@@ -4,16 +4,16 @@
 [![Twitter Follow](https://img.shields.io/twitter/follow/CD4ny?style=social)](https://twitter.com/CD4ny)
 
 A passionate Web developer  
-Currently working on Chackrasoft | Always learning 📚
+Currently working on **[Cakrasoft](https://chakrasoft.com/)**
 
 ---
 
 ## 💼 About Me
 
-- 🔭 I’m currently maintaining **[EDEN-BOOKS Backend]**
-- 🌱 I’m learning **[Machine Learning,Software Engineering,backend Development]**
+- 🔭 I’m currently maintaining **[EDEN-BOOKS Backend](https://edenbooks.rs/)**
+- 🌱 I’m learning **Machine Learning,Software Engineering,backend Development**
 - 📫 How to reach me: **[chavianodaniel99@gmail.com](mailto:chavianodaniel99@gmail.com)**
-- ⚡ Fun fact: **[Something fun or quirky about you!]**
+- ⚡ Fun fact: **Friday's releases are not good only if you don't pass **
 
 ---
 
@@ -25,8 +25,6 @@ Currently working on Chackrasoft | Always learning 📚
 ![Node.js](https://img.shields.io/badge/-Node.js-339933?style=flat&logo=node.js&logoColor=white)
 ![Docker](https://img.shields.io/badge/-Docker-2496ED?style=flat&logo=docker&logoColor=white)
 ![AWS](https://img.shields.io/badge/-AWS-232F3E?style=flat&logo=amazon-aws&logoColor=white)
-
-*(Customize with your own stack!)*
 
 ---
 
@@ -41,8 +39,6 @@ Currently working on Chackrasoft | Always learning 📚
 
 ![Trophies](https://github-profile-trophy.vercel.app/?username=CD4ny&theme=radical&margin-w=15)
 
----
-
 ## 📫 Let's Connect!
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/your-profile)
@@ -51,4 +47,4 @@ Currently working on Chackrasoft | Always learning 📚
 
 ---
 
-⭐️ From [Your Name](https://github.com/your-username)
+⭐️ From [Your Name](https://github.com/CD4ny)
