@@ -1,7 +1,7 @@
 # 👋 Hi, I'm [Your Name]!
 
-[![GitHub followers](https://img.shields.io/github/followers/your-username?style=social)](https://github.com/CD4ny)
-[![Twitter Follow](https://img.shields.io/twitter/follow/your-twitter-handle?style=social)](https://twitter.com/CD4ny)
+[![GitHub followers](https://img.shields.io/github/followers/CD4ny?style=social)](https://github.com/CD4ny)
+[![Twitter Follow](https://img.shields.io/twitter/follow/CD4ny?style=social)](https://twitter.com/CD4ny)
 
 A passionate Web developer  
 Currently working on Eden| Always learning 📚
@@ -10,10 +10,9 @@ Currently working on Eden| Always learning 📚
 
 ## 💼 About Me
 
-- 🔭 I’m currently building **[Project Name](link-to-project)**
-- 🌱 I’m learning **[technology/topic]**
-- 💬 Ask me about **[your expertise]**
-- 📫 How to reach me: **[your-email@example.com](mailto:your-email@example.com)** or **[LinkedIn](https://linkedin.com/in/your-profile)**
+- 🔭 I’m currently maintaining **[EDEN-BOOKS Backend]**
+- 🌱 I’m learning **[Machine Learning,Software Engineering,backend Development]**
+- 📫 How to reach me: **[chavianodaniel99@gmail.com](mailto:chavianodaniel99@gmail.com)**
 - ⚡ Fun fact: **[Something fun or quirky about you!]**
 
 ---
@@ -33,14 +32,14 @@ Currently working on Eden| Always learning 📚
 
 ## 📈 GitHub Stats
 
-![Your GitHub Stats](https://github-readme-stats.vercel.app/api?username=your-username&show_icons=true&theme=radical)
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=your-username&layout=compact&theme=radical)
+![Your GitHub Stats](https://github-readme-stats.vercel.app/api?username=CD4ny&show_icons=true&theme=radical)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=CD4ny&layout=compact&theme=radical)
 
 ---
 
 ## 🏆 GitHub Trophies
 
-![Trophies](https://github-profile-trophy.vercel.app/?username=your-username&theme=radical&margin-w=15)
+![Trophies](https://github-profile-trophy.vercel.app/?username=CD4ny&theme=radical&margin-w=15)
 
 ---
 
