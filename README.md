@@ -13,26 +13,26 @@ Currently working on **[Cakrasoft](https://chakrasoft.com/)**
 - 🔭 I’m currently maintaining **[EDEN-BOOKS Backend](https://edenbooks.rs/)**
 - 🌱 I’m learning **Machine Learning,Software Engineering,backend Development**
 - 📫 How to reach me: **[chavianodaniel99@gmail.com](mailto:chavianodaniel99@gmail.com)**
-- ⚡ Fun fact: **Friday's releases are not good only if you don't pass unt tests **
+- ⚡ Fun fact: **[Friday's releases are not good only if you don't pass unt tests] **
 
 ---
 
 ## 🛠️ Tech Stack
 ![Php](https://img.shields.io/badge/-Php-3776AB?style=flat&logo=php&logoColor=white)
-![Python](https://img.shields.io/badge/-Python-3776AB?style=flat&logo=python&logoColor=white)
+![Python](https://img.shields.io/badge/-Python-232F3E?style=flat&logo=python&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
 ![React](https://img.shields.io/badge/-React-61DAFB?style=flat&logo=react&logoColor=black)
 ![Node.js](https://img.shields.io/badge/-Node.js-339933?style=flat&logo=node.js&logoColor=white)
 ![Docker](https://img.shields.io/badge/-Docker-2496ED?style=flat&logo=docker&logoColor=white)
-![AWS](https://img.shields.io/badge/-AWS-232F3E?style=flat&logo=amazon-aws&logoColor=white)
 
 ---
 
 ## 📫 Let's Connect!
 
-[![LinkedIn](https://)
+[![Portfolio](https://img.shields.io/badge/Linkedin-FF5722?style=for-the-badge&logo=google-chrome&logoColor=white)](https://your-portfolio.com)
 [![Twitter](https://img.shields.io/twitter/follow/CD4ny?style=social)](https://twitter.com/CD4ny)
-[![Portfolio](https://)
+[![Portfolio](https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=google-chrome&logoColor=white)](https://your-portfolio.com)
+
 
 ---
 
