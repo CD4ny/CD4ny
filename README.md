@@ -11,7 +11,7 @@ Currently working on **[Cakrasoft](https://chakrasoft.com/)**
 ## 💼 About Me
 
 - 🔭 I’m currently maintaining **[EDEN-BOOKS Backend](https://edenbooks.rs/)**
-- 🌱 I’m learning **Machine Learning,Software Engineering,backend Development**
+- 🌱 I’m learning **Machine Learning, Software Engineering, Backend Development**
 - 📫 How to reach me: **[chavianodaniel99@gmail.com](mailto:chavianodaniel99@gmail.com)**
 - ⚡ Fun fact: **[Friday's releases are not good only if you don't pass unt tests] **
 
