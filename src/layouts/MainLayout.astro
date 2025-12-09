@@ -1,10 +1,15 @@
 ---
 import BaseHead from "../components/BaseHead.astro";
+import { SiteConfigController } from "../presentation/controllers/SiteConfigController";
+import { SiteConfigViewModelMapper } from "../presentation/viewmodels/SiteConfigViewModel";
 
-import {SITE_DESCRIPTION, SITE_TITLE} from "../consts";
+// Dependency Injection - Controller
+const siteConfigController = new SiteConfigController();
+const siteConfig = await siteConfigController.getSiteConfig();
+const siteConfigViewModel = SiteConfigViewModelMapper.toViewModel(siteConfig);
 ---
 <html lang="en">
-<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION}></BaseHead>
+<BaseHead title={siteConfigViewModel.title} description={siteConfigViewModel.description}></BaseHead>
 <body class="bg-primary dark:bg-dark">
 <main>
     <slot/>

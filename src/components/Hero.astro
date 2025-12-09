@@ -1,5 +1,13 @@
 ---
+import { UserController } from '../presentation/controllers/UserController';
+import { UserViewModelMapper } from '../presentation/viewmodels/UserViewModel';
+
 const { className: classes } = Astro.props;
+
+// Dependency Injection - Controller
+const userController = new UserController();
+const user = await userController.getUser();
+const userViewModel = UserViewModelMapper.toViewModel(user);
 ---
 
 <div class={classes + " justify-center content-center justify-items-center"}>
@@ -23,22 +31,21 @@ const { className: classes } = Astro.props;
       <img
         class="w-40 h-40 sm:w-64 sm:h-64 lg:w-72 lg:h-72 drop-shadow-lg backdrop-blur"
         src={"/avatar-color.png"}
-        alt="Avatar"
+        alt={userViewModel.name}
       />
     </div>
     <div class="px-12 xs:w-full sm:w-8/12 md:w-6/12 lg:w-5/12 xl:w-4/12">
       <h1 class="text-alice_blue-400 text-center text-3xl py-2">
-        Daniel Chaviano Pérez
+        {userViewModel.name}
       </h1>
       <h1 class="text-naples_yellow text-center text-lg py-2">
-        Software Engineer
+        {userViewModel.role}
       </h1>
       <p class="text-alice_blue text-center text-lg text-wrap py-4">
-        Backend developer, interested in AI, Frontend Development, Algorithm
-        Designing, Software Architecture.
+        {userViewModel.bio}
       </p>
       <p class="text-lavender_pink-600 text-center text-xs">
-        Also likes music,planes,photography,design.
+        {userViewModel.interests}
       </p>
     </div>
   </div>
