@@ -9,16 +9,44 @@ import { USER_NAME } from "../config/constants";
  */
 export class UserRepository implements IUserRepository {
   async getUser(): Promise<User> {
-    // En una aplicación real, esto podría venir de una API o base de datos
-    const userData = {
-      name: "Daniel Chaviano Pérez",
-      username: USER_NAME,
-      picture: `https://avatars.githubusercontent.com/${USER_NAME}`,
-      role: "Software Engineer",
-      bio: "Backend developer, interested in AI, Frontend Development, Algorithm Designing, Software Architecture.",
-      interests: "Also likes music, planes, photography, design.",
-    };
+    try {
+      // Obtener datos desde la API de GitHub
+      const response = await fetch(`https://api.github.com/users/${USER_NAME}`);
 
-    return UserEntity.create(userData);
+      if (!response.ok) {
+        throw new Error(`GitHub API error: ${response.status}`);
+      }
+
+      const githubData = await response.json();
+
+      const userData = {
+        name: githubData.name || USER_NAME,
+        username: githubData.login || USER_NAME,
+        picture:
+          githubData.avatar_url ||
+          `https://avatars.githubusercontent.com/${USER_NAME}`,
+        role: "Software Engineer",
+        bio:
+          githubData.bio ||
+          "Backend developer, interested in AI, Frontend Development, Algorithm Designing, Software Architecture.",
+        interests: "Also likes music, planes, photography, design.",
+      };
+
+      return UserEntity.create(userData);
+    } catch (error) {
+      console.error("Error fetching user from GitHub:", error);
+
+      // Fallback con datos por defecto en caso de error
+      const fallbackData = {
+        name: "Daniel Chaviano Pérez",
+        username: USER_NAME,
+        picture: `https://avatars.githubusercontent.com/${USER_NAME}`,
+        role: "Software Engineer",
+        bio: "Backend developer, interested in AI, Frontend Development, Algorithm Designing, Software Architecture.",
+        interests: "Also likes music, planes, photography, design.",
+      };
+
+      return UserEntity.create(fallbackData);
+    }
   }
 }
