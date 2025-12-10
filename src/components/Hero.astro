@@ -1,6 +1,7 @@
 ---
-import { UserController } from '../presentation/controllers/UserController';
-import { UserViewModelMapper } from '../presentation/viewmodels/UserViewModel';
+import { UserController } from "../presentation/controllers/UserController";
+import { UserViewModelMapper } from "../presentation/viewmodels/UserViewModel";
+import Footer from "./Footer.astro";
 
 const { className: classes } = Astro.props;
 
@@ -49,4 +50,5 @@ const userViewModel = UserViewModelMapper.toViewModel(user);
       </p>
     </div>
   </div>
+  <Footer />
 </div>

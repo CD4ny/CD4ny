@@ -1,3 +1,4 @@
+import axios from "axios";
 import type { IUserRepository } from "../../core/domain/repositories/IUserRepository";
 import { UserEntity } from "../../core/domain/entities/User";
 import type { User } from "../../core/domain/entities/User";
@@ -10,14 +11,11 @@ import { USER_NAME } from "../config/constants";
 export class UserRepository implements IUserRepository {
   async getUser(): Promise<User> {
     try {
-      // Obtener datos desde la API de GitHub
-      const response = await fetch(`https://api.github.com/users/${USER_NAME}`);
-
-      if (!response.ok) {
-        throw new Error(`GitHub API error: ${response.status}`);
-      }
-
-      const githubData = await response.json();
+      // Obtener datos desde la API de GitHub usando axios
+      const response = await axios.get(
+        `https://api.github.com/users/${USER_NAME}`
+      );
+      const githubData = response.data;
 
       const userData = {
         name: githubData.name || USER_NAME,
